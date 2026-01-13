@@ -12,3 +12,17 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+document.querySelectorAll("h2").forEach((heading) => {
+  heading.addEventListener("click", () => {
+    const section = heading.nextElementSibling;
+    if (!section) return;
+
+    section.style.backgroundColor = "#f3f4f6";
+    section.style.padding = "8px";
+
+    setTimeout(() => {
+      section.style.backgroundColor = "transparent";
+      section.style.padding = "0";
+    }, 600);
+  });
+});
