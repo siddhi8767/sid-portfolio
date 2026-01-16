@@ -17,7 +17,7 @@ document.querySelectorAll("h2").forEach((heading) => {
     const section = heading.nextElementSibling;
     if (!section) return;
 
-    section.style.backgroundColor = "#f3f4f6";
+    section.style.backgroundColor = "#F2F0EA";
     section.style.padding = "8px";
 
     setTimeout(() => {
